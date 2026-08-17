@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Martin">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="description" content="TP de mise à niveau">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Inscription_Site</title>
+
+</head>
+
+<body>
+
+    <h1>Formulaire d'inscription</h1>
+
+    <p>
+        Veuillez compléter le formulaire d'inscription avec vos informations
+    </p>
+
+    <hr>
+
+
+    <!--  MAIN CONTAINER -->
+
+    <div class="conteneur">
+
+
+        <!-- FORM -->
+
+        <section class="formulaire-section">
+
+            <form action="">
+
+                <div class="champ">
+
+                    <label for="nom">Nom</label>
+
+                    <input
+                        type="text"
+                        name="nom"
+                        id="nom"
+                        placeholder="Nom"
+                    >
+
+                </div>
+
+
+                <div class="champ">
+
+                    <label for="prenom">Prénom</label>
+
+                    <input
+                        type="text"
+                        name="prenom"
+                        id="prenom"
+                        placeholder="Prénom"
+                    >
+
+                </div>
+
+
+                <div class="champ">
+
+                    <label for="sexe">Sexe</label>
+
+                    <select name="sexe" id="sexe">
+
+                        <option value="" selected>
+                            * Merci de sélectionner *
+                        </option>
+
+                        <option value="masculin">
+                            Masculin
+                        </option>
+
+                        <option value="feminin">
+                            Féminin
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="champ">
+
+                    <label for="tel">Téléphone</label>
+
+                    <input
+                        type="tel"
+                        name="tel"
+                        id="tel"
+                        placeholder="01 21 33 44 56 78"
+                    >
+
+                </div>
+
+
+                <div class="champ">
+
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="pierregiraud@gmail.com"
+                    >
+
+                </div>
+
+
+                <div class="champ">
+
+                    <label for="date">
+                        Date de naissance
+                    </label>
+
+                    <input
+                        type="date"
+                        name="date"
+                        id="date"
+                    >
+
+                </div>
+
+
+                <!--MARITAL STATUS -->
+
+                <div class="champ statut">
+
+                    <label>
+                        Statut matrimonial
+                    </label>
+
+
+                    <div class="choix">
+
+                        <input
+                            type="radio"
+                            name="statut"
+                            id="celibataire"
+                            value="celibataire"
+                        >
+
+                        <label for="celibataire">
+                            Célibataire
+                        </label>
+
+                    </div>
+
+
+                    <div class="choix">
+
+                        <input
+                            type="radio"
+                            name="statut"
+                            id="marie"
+                            value="marie"
+                        >
+
+                        <label for="marie">
+                            Marié(e)
+                        </label>
+
+                    </div>
+
+
+                    <div class="choix">
+
+                        <input
+                            type="radio"
+                            name="statut"
+                            id="divorce"
+                            value="divorce"
+                        >
+
+                        <label for="divorce">
+                            Divorcé(e)
+                        </label>
+
+                    </div>
+
+
+                    <div class="choix">
+
+                        <input
+                            type="radio"
+                            name="statut"
+                            id="veuve"
+                            value="veuve"
+                        >
+
+                        <label for="veuve">
+                            Veuf / Veuve
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!--  ACCEPTANCE -->
+
+                <div class="acceptation">
+
+                    <input
+                        type="checkbox"
+                        id="acceptation"
+                        name="acceptation"
+                    >
+
+                    <label for="acceptation">
+
+                        En soumettant ce formulaire,
+                        j'accepte que les données saisies
+                        soient collectées dans le but de
+                        traiter ma demande.
+
+                    </label>
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <button type="submit">
+                    Envoyer
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- TABLE-->
+
+        <section class="tableau-section">
+
+            <h1>Tableau des inscriptions</h1>
+
+            <p>
+                Vous pouvez modifier vos informations.
+            </p>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Nom</th>
+
+                            <th>Prénom</th>
+
+                            <th>Sexe</th>
+
+                            <th>Téléphone</th>
+
+                            <th>Email</th>
+
+                            <th>Date de naissance</th>
+
+                            <th>Statut matrimonial</th>
+
+                            <th>Modifier</th>
+
+                            <th>Supprimer</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <!-- Users will be added here -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
