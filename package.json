@@ -1,10 +1,14 @@
 {
   "name": "mon-projet-web",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Formulaire d'inscription avec PostgreSQL",
+  "main": "backend/server.js",
   "scripts": {
+    "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "keywords": [],
   "author": "",
