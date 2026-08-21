@@ -327,7 +327,7 @@ function envoyerAuServeur(inscription) {
     // 1. L'URL du serveur
     // 2. Les options de la requete (methode, donnees, etc.)
 
-    fetch("http://localhost:3000/api/inscriptions", {
+    fetch("/api/inscriptions", {
         // La methode POST signifie "creer une nouvelle ressource"
         method: "POST",
 
@@ -369,7 +369,7 @@ function envoyerAuServeur(inscription) {
 
 function supprimerDuServeur(id) {
 
-    fetch("http://localhost:3000/api/inscriptions/" + id, {
+    fetch("/api/inscriptions/" + id, {
         method: "DELETE"
     })
     .then(function (response) {
@@ -392,7 +392,7 @@ function supprimerDuServeur(id) {
 
 function chargerInscriptions() {
 
-    fetch("http://localhost:3000/api/inscriptions")
+    fetch("/api/inscriptions")
     .then(function (response) {
         return response.json();
     })
